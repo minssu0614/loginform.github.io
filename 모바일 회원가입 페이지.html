@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 회원가입 페이지</title>
+    <style>
+        * {margin:0; padding:0;}
+        li {list-style: none;}
+        a {
+            text-decoration: none;
+            display:none;
+            color: #333;
+        }
+        fieldset {border:0;}
+        legend {
+            position: absolute;
+            left:-99999px;
+        }
+        .wrap {
+            width: 375.5px;
+            border: 1px solid #333;
+            margin: 50px auto;
+            padding: 34px 12px;
+        }
+        h1 {
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form action="" method="post">
+            <h1>CJ</h1>
+            <fieldset>
+                <legend>개인정보</legend>
+                <div>
+                    <label for="name">이름</label>
+                    <input type="text"  id="name" placeholder="이름">
+                </div>
+
+                <div>
+                    <label for="number">휴대전화번호</label>
+                    <select>
+                        <option>010</option>
+                        <option>011</option>
+                    </select>
+                    <input type="text"  id="number" placeholder="휴대전화번호">
+                </div>
+                    
+                <div class="button">
+                    <h2>성별(선택)</h2>
+                    <input type="button" name="성별" value="남자">
+                    <input type="button" name="성별" value="여자">
+                </div>
+
+                <div>
+                    <h3>마케팅 수신동의(선택)</h3>
+                    <input type="checkbox">
+                    <label>SNS</label>
+
+                    <input type="checkbox">
+                    <label>전화</label>
+
+                    <input type="checkbox">
+                    <label>카탈로그</label>
+                </div>
+
+                <div>
+                    <input type="checkbox">
+                    <label>약관 전체 동의하기</label>
+
+                    <input type="checkbox">
+                    <label>개인정보 수집 및 이용동의</label>
+
+                    <input type="checkbox">
+                    <label>OOOO이용약관 동의(선택)</label>
+
+                    <input type="checkbox">
+                    <label>개인정보 취급 및 위탁 동의(선택)</label>
+                </div>
+
+                <div class="button02">
+                    <input type="submit" value="회원가입">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

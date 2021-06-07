@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인페이지</title>
+    <style>
+        @font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 400;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 700;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 300;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+/* .nanumbarungothic * {
+ font-family: 'NanumBarunGothic', sans-serif;
+} */
+        * {margin:0; padding:0;}
+        li {list-style:none;}
+        a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        fieldset {border:0;}
+        legend {
+            position: absolute;
+            left:-99999px;
+        }
+        .wrap {
+            width: 1920px;
+            height: 1080px;
+            /* border: 1px solid #333; */
+            /* padding: 50px; */
+            box-sizing: border-box;
+            text-align: center;
+            background:url('img/img01.jpg') right 0 no-repeat;
+            /* 배경 : 경로(폴더/파일명.확장자명) x축위치 y축위치 / 이미지사이즈 no-repeat*/
+        }
+        label {
+            width: 100px;
+            display:inline-block;
+            position: absolute;
+            left: -99999px;
+        }
+        input[type="text"], input[type="password"]  {
+            width: 544px;
+            height: 94px;
+            border: 1px solid #ccc;
+        }
+        .wrap form {
+            width: 784px; /* 들어가는 영역 사이즈 설정 */
+            padding: 0 120px; /* 영역안에서 공통으로적용되는 여백 */   
+            padding-top: 110px;
+            box-sizing: border-box; /* 여백 포함한 사이즈 설정되도록 지정 */
+             
+        }
+        .wrap h2 {
+            font-size:123px;
+            /* margin:110px 0; */
+            font-family: 'NanumBarunGothic';
+            text-align: center;
+        }
+        .wrap div {
+            margin: 60px 0;
+        }
+        button {
+            border:0;
+            margin: 24px 0;
+            border-radius: 20px;
+        }
+        .naver {
+            background-color:#03C75A;
+            width:544px;
+            height:52px;
+        }
+        .kakao {
+            background-color: #FAE100;
+            width:544px;
+            height:52px;
+        }
+        .login {
+            background-color: #2C44E3;
+            width:544px;
+            height: 94px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form action="" method="post">
+            <h2>LOGIN</h2>
+            <fieldset>
+                <legend>개인정보</legend>
+                <div>
+                    <label for="name">아이디</label>
+                    <input type="text" id="name" placeholder="아이디입력"> 
+                </div>
+
+                <div>
+                    <label for="pass">비밀번호</label>
+                    <input type="password" id="pass" placeholder="비밀번호 입력">
+                </div>
+
+                <button class="naver">네이버로 로그인</button>
+                <button class="kakao">카카오로 로그인</button>
+                <button class="login">로그인</button>
+
+                <p>아이디 찾기 / 비밀번호 찾기<br />
+                    회원가입</p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
